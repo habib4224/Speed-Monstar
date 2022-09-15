@@ -151,16 +151,24 @@ button {
 }
 
 #histories {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-around; */
+  /* my code historey responsive problem solving  */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 10px;
 }
 
 .card {
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* my code historey responsive problem solving  */
+  width: 50%;
+  /* height: 100%; */
   padding: 50px;
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
@@ -193,6 +201,9 @@ button {
   }
 
   .card {
-    flex-direction: column;
+    /* flex-direction: column; */
+    /* my code historey responsive problem solving  */
+    width: 100%;
+
   }
 }

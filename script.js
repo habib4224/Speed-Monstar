@@ -107,6 +107,8 @@ const start = () => {
   countdownOverlay.style.display = "flex";
 
   const startCountdown = setInterval(() => {
+    // countdownOverlay.innerHTML = '<h1>${count}</h1>';
+    // my edite solutin  code 
     countdownOverlay.innerHTML = `<h1>${count}</h1>`;
 
     // finished timer
@@ -118,6 +120,8 @@ const start = () => {
 
       clearInterval(startCountdown);
       startTime = new Date().getTime();
+      // my timer vanish solution code 
+      countdownOverlay.style.display = 'none'
     }
     count--;
   }, 1000);

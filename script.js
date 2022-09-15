@@ -45,7 +45,10 @@ const typeController = (e) => {
   if (newLetterCorrect) {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
   } else {
+    // word wrong how much cheak this code 
+    errorCount++;
     display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
+
   }
 
   // check if given question text is equal to user typed text

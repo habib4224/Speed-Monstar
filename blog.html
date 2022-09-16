@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="container my-4">
+        <h1 class="fs-1 fw-bolder text-danger text-center">Question answering blog</h1>
+    </header>
+    <main>
+        <section class="container my-4">
+            <article>
+                <h2>Differences of Local storage vs Session storage?</h2>
+                <p> The read-only sessionStorage property accesses a session Storage object for the current origin.
+                    sessionStorage is similar to localStorage; the difference is that while data in localStorage doesn't
+                    expire, data in sessionStorage is cleared when the page session ends.
+                    Whenever a document is loaded in a particular tab in the browser, a unique page session gets created
+                    and assigned to that particular tab.</p>
+            </article>
+            <article>
+                <h2>Global Scope vs Block Scope?</h2>
+                <p>In a browser environment, the global scope is controlled by the window object while in Node. js, it's
+                    controlled by the global object. Block scopes are what you get when you use if statements, for
+                    statements, and the like.</p>
+            </article>
+            <article>
+                <h2>How does JS event loop works?</h2>
+                <p>The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call
+                    Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call
+                    Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.</p>
+            </article>
+            <article>
+                <h2>Different ways to get undefined?</h2>
+                <p>
+                <ol>
+                    <li>variable that is not initialized will give undefined</li>
+                    <li>deleting an element inside an array</li>
+                    <li>
+                        function with no return will give undefined
+                    </li>
+                    <li>accessing array elements outside of the index range will return undefined</li>
+                    <li>set a value directly to undefined</li>
+                    <li>property that does not exists of a object will return undefined</li>
+                    <li>parameter that is not passed will give undefined</li>
+                    <li>if return has nothing on the right side will return undefined</li>
+                </ol>
+                </p>
+            </article>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
